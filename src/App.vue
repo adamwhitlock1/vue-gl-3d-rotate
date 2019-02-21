@@ -22,7 +22,6 @@
     <vgl-renderer antialias style="height: 100vh;">
       <vgl-scene>
         <vgl-grid-helper
-          :size="size"
           :divisions="divisions"
           :color-center-line="
             `#${[cr, cg, cb]
@@ -74,7 +73,14 @@ export default {
     return {
       orbit1: 20,
       orbit2: 0.8,
-      orbit3: 0.7
+      orbit3: 0.7,
+      divisions: 9,
+      cb: 222,
+      cr: "250",
+      cg: "255",
+      gr: "200",
+      gg: "10",
+      gb: "15"
     };
   },
   created() {
